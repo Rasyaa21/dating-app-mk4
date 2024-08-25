@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Budget App</string>
+    <string name="gain_total_control_n_of_your_money">Gain total control \n of your money</string>
+    <string name="become_your_own_money_manager_n_and_make_every_cent_count">Become your own money manager \n and make every cent count</string>
 </resources>

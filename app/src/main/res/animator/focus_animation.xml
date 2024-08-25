@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_focused="true">
+        <objectAnimator
+            android:propertyName="elevation"
+            android:valueFrom="0dp"
+            android:valueTo="4dp"
+            android:duration="200"/>
+    </item>
+    <item android:state_focused="false">
+        <objectAnimator
+            android:propertyName="elevation"
+            android:valueFrom="4dp"
+            android:valueTo="0dp"
+            android:duration="200"/>
+    </item>
+</selector>
