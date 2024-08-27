@@ -15,7 +15,6 @@ class signUpActivity : AppCompatActivity() {
 
 
 
-
         WindowCompat.setDecorFitsSystemWindows(
             window,
             false
