@@ -5,167 +5,173 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fitsSystemWindows="true"
     android:background="@color/white"
+    android:fitsSystemWindows="true"
     tools:context=".landingActivity">
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginTop="100dp"
-        android:layout_marginBottom="16dp"
-        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintBottom_toBottomOf="@id/guideLineImageEnd"
         app:layout_constraintDimensionRatio="1:1"
-        app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
-        app:layout_constraintHorizontal_bias="0.47"
-        app:layout_constraintStart_toStartOf="@id/guideline"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.3"
-        app:layout_constraintWidth_percent="0.8"
+        app:layout_constraintEnd_toEndOf="@id/verticalGuideLineEnd"
+        app:layout_constraintStart_toStartOf="@id/verticalGuideLine"
+        app:layout_constraintTop_toTopOf="@id/guideLineImage"
         app:srcCompat="@drawable/illustration" />
 
     <TextView
-        android:id="@+id/textView"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:fontFamily="@font/inter_18pt_bold"
-        android:text="@string/gain_total_control_n_of_your_money"
+        android:gravity="center"
+        android:text="Gain total control \n of your money"
         android:textAlignment="center"
         android:textColor="@color/black"
-        app:autoSizeMaxTextSize="120sp"
-        app:autoSizeMinTextSize="20sp"
+        android:textSize="28sp"
         app:autoSizeTextType="uniform"
-        app:layout_constraintBottom_toTopOf="@+id/textGuideline2"
-        app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="@id/guideline"
-        app:layout_constraintTop_toTopOf="@id/textGuideline"
-        app:layout_constraintBottom_toBottomOf="@id/textGuideline2"/>
+        app:autoSizeMinTextSize="16sp"
+        app:autoSizeMaxTextSize="100sp"
+        app:autoSizeStepGranularity="1sp"
+        app:layout_constraintBottom_toBottomOf="@id/guideLineTextEnd"
+        app:layout_constraintEnd_toEndOf="@id/verticalGuideLineEnd"
+        app:layout_constraintStart_toStartOf="@id/verticalGuideLine"
+        app:layout_constraintTop_toTopOf="@id/guidelineText" />
 
     <TextView
-        android:id="@+id/textView2"
         android:layout_width="0dp"
-        android:layout_height="60dp"
-        android:layout_marginBottom="60dp"
+        android:layout_height="0dp"
         android:fontFamily="@font/inter_18pt_medium"
-        android:text="@string/become_your_own_money_manager_n_and_make_every_cent_count"
+        android:gravity="center"
+        android:padding="20dp"
+        android:text="Become your own money manager and make every cent count"
         android:textAlignment="center"
-        android:textColor="#808080"
-        app:autoSizeMaxTextSize="100sp"
-        app:autoSizeMinTextSize="18sp"
-        app:autoSizeStepGranularity="1sp"
+        android:textColor="#91919F"
         app:autoSizeTextType="uniform"
-        app:layout_constraintBottom_toTopOf="@+id/signUpBt"
-        app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@id/guideline"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintVertical_bias="1.0" />
+        app:autoSizeMinTextSize="12sp"
+        app:autoSizeMaxTextSize="100sp"
+        app:autoSizeStepGranularity="1sp"
+        app:layout_constraintBottom_toBottomOf="@id/guidelineDescEnd"
+        app:layout_constraintEnd_toEndOf="@id/verticalGuideLineEnd"
+        app:layout_constraintStart_toStartOf="@id/verticalGuideLine"
+        app:layout_constraintTop_toTopOf="@id/guideLineDesc" />
 
     <Button
         android:id="@+id/signUpBt"
-        style="?android:attr/borderlessButtonStyle"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="16dp"
-        android:background="@drawable/login_shape"
-        android:elevation="0dp"
-        android:fontFamily="@font/inter_18pt_bold"
-        android:padding="16dp"
-        android:stateListAnimator="@null"
+        android:layout_height="0dp"
+        android:textAppearance="@style/ButtonTextAppearnce"
         android:text="Sign Up"
-        android:textAllCaps="false"
-        android:textColor="@color/white"
-        app:layout_constraintBottom_toTopOf="@+id/buttonGuideline"
-        app:layout_constraintDimensionRatio="21:3.3"
-        app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
-        app:layout_constraintStart_toStartOf="@id/guideline"
-        app:layout_constraintTop_toTopOf="@+id/buttonGuideline2"
-        app:layout_constraintWidth_percent="0.8" />
+        app:autoSizeTextType="uniform"
+        app:autoSizeMinTextSize="12sp"
+        app:autoSizeMaxTextSize="18sp"
+        app:autoSizeStepGranularity="1sp"
+        app:layout_constraintTop_toTopOf="@id/guidelineSignUpBt"
+        app:layout_constraintBottom_toBottomOf="@id/guidelineSignUpBtEnd"
+        android:background="@drawable/login_shape"
+        app:layout_constraintStart_toStartOf="@id/verticalGuideLine"
+        app:layout_constraintEnd_toEndOf="@id/verticalGuideLineEnd"/>
 
     <Button
         android:id="@+id/loginBt"
-        style="?android:attr/borderlessButtonStyle"
         android:layout_width="0dp"
-        android:layout_height="53dp"
-        android:layout_marginHorizontal="16dp"
+        android:layout_height="0dp"
         android:background="@drawable/sign_up_shape"
-        android:elevation="0dp"
-        android:fontFamily="@font/inter_18pt_bold"
-        android:padding="16dp"
-        android:stateListAnimator="@null"
         android:text="Login"
-        android:textAllCaps="false"
+        app:autoSizeTextType="uniform"
+        app:autoSizeMinTextSize="12sp"
+        app:autoSizeMaxTextSize="18sp"
+        app:autoSizeStepGranularity="1sp"
         android:textColor="#7D46FC"
-        app:layout_constraintBottom_toTopOf="@+id/buttonGuidelineSecond2"
-        app:layout_constraintDimensionRatio="21:3.3"
-        app:layout_constraintEnd_toStartOf="@+id/guidelineEnd"
-        app:layout_constraintStart_toStartOf="@+id/guideline"
-        app:layout_constraintTop_toTopOf="@+id/buttonGuidelineSecond"
-        app:layout_constraintWidth_percent="0.8" />
+        android:textAppearance="@style/ButtonTextAppearnce"
+        app:layout_constraintStart_toStartOf="@id/verticalGuideLine"
+        app:layout_constraintEnd_toEndOf="@id/verticalGuideLineEnd"
+        app:layout_constraintTop_toTopOf="@id/guidelineLoginBt"
+        app:layout_constraintBottom_toBottomOf="@id/guidelineLoginBtEnd"/>
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline"
+        android:id="@+id/verticalGuideLine"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_begin="-184dp"
+        app:layout_constraintGuide_percent="0.07" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/verticalGuideLineEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.93" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideLineImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.08" />
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guidelineEnd"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_begin="20dp"
-        app:layout_constraintGuide_percent="0.92" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/buttonGuideline"
+        android:id="@+id/guideLineImageEnd"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="20dp"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.54" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideLineTextEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.63" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideLineDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.63" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineDescEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.73" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineSignUpBt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.82" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineSignUpBtEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.89" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineLoginBt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.9" />
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/buttonGuideline2"
+        android:id="@+id/guidelineLoginBtEnd"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="20dp"
-        app:layout_constraintGuide_percent="0.835" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/buttonGuidelineSecond"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_begin="20dp"
-        app:layout_constraintGuide_percent="0.91" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/buttonGuidelineSecond2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_begin="20dp"
-        app:layout_constraintGuide_percent="0.973" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/textGuideline"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_begin="505dp"
-        app:layout_constraintGuide_percent="0.58" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/textGuideline2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_end="259dp" />
+        app:layout_constraintGuide_percent="0.97" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

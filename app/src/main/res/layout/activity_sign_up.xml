@@ -28,6 +28,7 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/inter_18pt_bold"
             android:text="Sign Up"
+            android:layout_marginTop="10dp"
             android:textColor="@color/black"
             android:textSize="25sp"
             app:autoSizeMaxTextSize="25sp"
@@ -40,11 +41,11 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:background="@drawable/form_background"
+        android:elevation="0dp"
         android:ems="10"
         android:fontFamily="@font/inter_18pt_medium"
         android:hint="Name"
         android:inputType="text"
-        android:elevation="0dp"
         android:padding="12dp"
         android:stateListAnimator="@animator/focus_animation"
         android:textColor="@color/black"
@@ -63,11 +64,11 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:background="@drawable/form_background"
+        android:elevation="0dp"
         android:ems="10"
         android:fontFamily="@font/inter_18pt_medium"
         android:hint="Email"
         android:inputType="textEmailAddress"
-        android:elevation="0dp"
         android:padding="12dp"
         android:stateListAnimator="@animator/focus_animation"
         android:textColor="@color/black"
@@ -87,8 +88,8 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:background="@drawable/form_background"
-        android:ems="10"
         android:elevation="0dp"
+        android:ems="10"
         android:fontFamily="@font/inter_18pt_medium"
         android:hint="Password"
         android:inputType="textPassword"
@@ -168,6 +169,196 @@
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.48" />
 
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/showPassGuide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.50" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/showPassGuide2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.53" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="end"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@id/showPassGuide2"
+        app:layout_constraintEnd_toEndOf="@id/verticalGuideLineEnd"
+        app:layout_constraintStart_toStartOf="@id/verticalGuideLine"
+        app:layout_constraintTop_toTopOf="@id/showPassGuide">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter_18pt_medium"
+            android:text="Show Password"
+            android:textColor="@color/black"
+            android:textSize="14dp" />
+
+        <CheckBox
+            android:id="@+id/showPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideLineButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.55" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideLineButtonEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.62" />
+
+    <Button
+        android:id="@+id/signUpBt"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/login_shape"
+        android:text="Sign Up"
+        android:textAllCaps="false"
+        android:outlineProvider="none"
+        android:textAppearance="@style/ButtonTextAppearnce"
+        app:autoSizeTextType="uniform"
+        app:autoSizeMinTextSize="12sp"
+        app:autoSizeMaxTextSize="18sp"
+        app:autoSizeStepGranularity="1sp"
+        app:layout_constraintBottom_toBottomOf="@id/guideLineButtonEnd"
+        app:layout_constraintEnd_toEndOf="@id/verticalGuideLineEnd"
+        app:layout_constraintStart_toStartOf="@id/verticalGuideLine"
+        app:layout_constraintTop_toTopOf="@id/guideLineButton" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/orTextGuideLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.64" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/orTextGuideLineEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.67" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:text="Or With"
+        android:textStyle="bold"
+        android:layout_height="0dp"
+        app:autoSizeMaxTextSize="20sp"
+        app:autoSizeMinTextSize="14sp"
+        android:textAlignment="center"
+        android:textColor="#91919F"
+        app:autoSizeTextType="uniform"
+        android:fontFamily="@font/inter_18pt_medium"
+        app:layout_constraintTop_toTopOf="@id/orTextGuideLine"
+        app:layout_constraintStart_toStartOf="@id/verticalGuideLine"
+        app:layout_constraintEnd_toEndOf="@id/verticalGuideLineEnd"
+        app:layout_constraintBottom_toBottomOf="@id/orTextGuideLineEnd"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/googleSignInGuideLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.695" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/googleSignInGuideLineEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.76"/>
+
+    <Button
+        android:id="@+id/googleSignUpBt"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/google_button_shape"
+        android:drawableStart="@drawable/google_icon"
+        android:fontFamily="@font/inter_18pt_medium"
+        android:gravity="center"
+        android:text="Sign Up With Google"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:autoSizeTextType="uniform"
+        android:outlineProvider="none"
+        app:autoSizeMinTextSize="12sp"
+        app:autoSizeMaxTextSize="18sp"
+        app:autoSizeStepGranularity="1sp"
+        app:layout_constraintBottom_toBottomOf="@id/googleSignInGuideLineEnd"
+        app:layout_constraintEnd_toEndOf="@id/verticalGuideLineEnd"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/verticalGuideLine"
+        app:layout_constraintTop_toTopOf="@id/googleSignInGuideLine"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/loginTvGuildeLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.78"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/loginTvGuildeLineEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.81"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="@id/verticalGuideLine"
+        app:layout_constraintEnd_toEndOf="@id/verticalGuideLineEnd"
+        app:layout_constraintTop_toTopOf="@id/loginTvGuildeLine"
+        app:layout_constraintBottom_toBottomOf="@id/loginTvGuildeLineEnd">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Already Have Account ?"
+            android:textStyle="bold"
+            app:autoSizeMaxTextSize="18sp"
+            app:autoSizeMinTextSize="14sp"
+            android:textAlignment="center"
+            android:textColor="#91919F"
+            app:autoSizeTextType="uniform"
+            android:fontFamily="@font/inter_18pt_medium"/>
+
+        <TextView
+            android:id="@+id/goToLoginTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  Login"
+            android:textStyle="bold"
+            app:autoSizeMaxTextSize="18sp"
+            app:autoSizeMinTextSize="14sp"
+            android:textAlignment="center"
+            android:textColor="#7D46FC"
+            app:autoSizeTextType="uniform"
+            android:fontFamily="@font/inter_18pt_medium"/>
+
+
+
+
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 
