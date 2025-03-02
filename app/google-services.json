@@ -2,7 +2,7 @@
   "project_info": {
     "project_number": "620443927400",
     "project_id": "budget-app-eb18d",
-    "storage_bucket": "budget-app-eb18d.appspot.com"
+    "storage_bucket": "budget-app-eb18d.firebasestorage.app"
   },
   "client": [
     {
@@ -13,6 +13,14 @@
         }
       },
       "oauth_client": [
+        {
+          "client_id": "620443927400-5k9ql9qlntr2b87kop6m9mn3lcaslk1e.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.budgetapp",
+            "certificate_hash": "2b9bc0f70022b17701941f801c52815c6c0a3193"
+          }
+        },
         {
           "client_id": "620443927400-br98m13vovi58bmvd0vkv4ef8ud183pv.apps.googleusercontent.com",
           "client_type": 3

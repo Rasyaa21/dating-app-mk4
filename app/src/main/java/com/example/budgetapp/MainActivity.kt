@@ -14,8 +14,6 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         supportActionBar?.hide()
 
-
-
         WindowCompat.setDecorFitsSystemWindows(
             window,
             false
